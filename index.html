@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDment</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+</head>
+<body>
+    <aside>
+        <a href="#profile" class="profile"><img src="images/Graphic.png" alt=""><br><strong>Ellie's Worspace</strong></a><br><br>
+        <!-- <input type="text" placeholder="Name"> -->
+
+        <a href="#Search"><img class="icon" src="images/icons/search.png" alt="">Search</a>
+
+        <a href="#Home"><img class="icon" src="images/icons/home.png" alt="">Home</a>
+
+        <a href="#cnotes"><img class="icon" src="images/icons/notes.png" alt="">Subjects and notes</a>
+
+        <a href="#papers"><img class="icon" src="images/icons/papers.png" alt="">Past Papers</a>
+
+        <a href="#settings"><img class="icon" src="images/icons/Settings.png" alt="">Settings</a>
+
+        <div class="homework">
+          <h1>Homework</h1>
+          <form id="noteForm">
+            <div class="note">
+                <input type="text" class="note-text" placeholder="Subject 1">
+                <input type="checkbox" class="note-check">
+            </div>
+            <div class="note">
+                <input type="text" class="note-text" placeholder="Subject 2">
+                <input type="checkbox" class="note-check">
+            </div>
+            <div class="note">
+                <input type="text" class="note-text" placeholder="Subject 3">
+                <input type="checkbox" class="note-check">
+            </div>
+            <div class="note">
+                <input type="text" class="note-text" placeholder="Subject 4">
+                <input type="checkbox" class="note-check">
+            </div>
+            <div class="note">
+                <input type="text" class="note-text" placeholder="Subject 5">
+                <input type="checkbox" class="note-check">
+            </div>
+            <div class="note">
+                <input type="text" class="note-text" placeholder="Subject 6">
+                <input type="checkbox" class="note-check">
+            </div>
+            <div class="note">
+                <input type="text" class="note-text" placeholder="Subject 7">
+                <input type="checkbox" class="note-check">
+            </div>
+            <div class="note">
+                <input type="text" class="note-text" placeholder="Subject 8">
+                <input type="checkbox" class="note-check">
+            </div>
+            <button type="button" onclick="clearNotes()">Clear Homework</button>
+        </form>
+      </div>
+        <!-- <button class="dropdown-btn">Dropdown 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div> -->
+        
+      </aside>
+      
+      <main>
+        <header><img src="images/Logo.png" alt="">
+            
+            <div class="habit-tracker"></div>
+        </header>
+        
+
+        <section class="plan">
+          <div class="container">
+            <div class="left">
+              <div class="calendar">
+                <div class="month">
+                  <i class="fas fa-angle-left prev"></i>
+                  <div class="date">december 2015</div>
+                  <i class="fas fa-angle-right next"></i>
+                </div>
+                <div class="weekdays">
+                  <div>Sun</div>
+                  <div>Mon</div>
+                  <div>Tue</div>
+                  <div>Wed</div>
+                  <div>Thu</div>
+                  <div>Fri</div>
+                  <div>Sat</div>
+                </div>
+                <div class="days"></div>
+                <div class="goto-today">
+                  <div class="goto">
+                    <input type="text" placeholder="mm/yyyy" class="date-input" />
+                    <button class="goto-btn">Go</button>
+                  </div>
+                  <button class="today-btn">Today</button>
+                </div>
+              </div>
+            </div>
+            <div class="right">
+              <div class="today-date">
+                <div class="event-day">wed</div>
+                <div class="event-date">12th december 2022</div>
+              </div>
+              <div class="events"></div>
+              <div class="add-event-wrapper">
+                <div class="add-event-header">
+                  <div class="title">Add Event</div>
+                  <i class="fas fa-times close"></i>
+                </div>
+                <div class="add-event-body">
+                  
+                  <div class="add-event-input">
+                    <input type="text" placeholder="Subject" class="event-name" />
+                  </div>
+      
+                  <div class="add-event-input">
+                    <input
+                      type="text"
+                      placeholder="Type(e.g. Test, Assignment, etc.)"
+                      class="event-time-from"
+                    />
+                    
+                  </div>
+                  <div class="add-event-input">
+                    <input
+                      type="text"
+                      placeholder="Topic and details"
+                      class="event-time-to"
+                    />
+                  </div>
+                </div>
+                <div class="add-event-footer">
+                  <button class="add-event-btn">Add Event</button>
+                </div>
+              </div>
+            </div>
+            <button class="add-event">
+              <i class="fas fa-plus"></i>
+            </button>
+          </div>
+      
+            <div class="extra-classes">
+              <div class="classes">
+        <h1>Extra classes:</h1>
+        <form id="scheduleForm">
+          <div class="weekday">
+              <h2>Monday</h2>
+              <div class="entry">
+                  <input type="text" class="subject" placeholder="Subject">
+                  <input type="time" class="time">
+              </div>
+              <div class="entry">
+                  <input type="text" class="subject" placeholder="Subject">
+                  <input type="time" class="time">
+              </div>
+              <div class="entry">
+                  <input type="text" class="subject" placeholder="Subject">
+                  <input type="time" class="time">
+              </div>
+              <div class="entry">
+                  <input type="text" class="subject" placeholder="Subject">
+                  <input type="time" class="time">
+              </div>
+          </div>
+          <div class="weekday">
+              <h2>Tuesday</h2>
+              <div class="entry">
+                  <input type="text" class="subject" placeholder="Subject">
+                  <input type="time" class="time">
+              </div>
+              <div class="entry">
+                  <input type="text" class="subject" placeholder="Subject">
+                  <input type="time" class="time">
+              </div>
+              <div class="entry">
+                  <input type="text" class="subject" placeholder="Subject">
+                  <input type="time" class="time">
+              </div>
+              <div class="entry">
+                  <input type="text" class="subject" placeholder="Subject">
+                  <input type="time" class="time">
+              </div>
+          </div>
+          <div class="weekday">
+              <h2>Wednesday</h2>
+              <div class="entry">
+                  <input type="text" class="subject" placeholder="Subject">
+                  <input type="time" class="time">
+              </div>
+              <div class="entry">
+                  <input type="text" class="subject" placeholder="Subject">
+                  <input type="time" class="time">
+              </div>
+              <div class="entry">
+                  <input type="text" class="subject" placeholder="Subject">
+                  <input type="time" class="time">
+              </div>
+              <div class="entry">
+                  <input type="text" class="subject" placeholder="Subject">
+                  <input type="time" class="time">
+              </div>
+          </div>
+          <div class="weekday">
+              <h2>Thursday</h2>
+              <div class="entry">
+                  <input type="text" class="subject" placeholder="Subject">
+                  <input type="time" class="time">
+              </div>
+              <div class="entry">
+                  <input type="text" class="subject" placeholder="Subject">
+                  <input type="time" class="time">
+              </div>
+              <div class="entry">
+                  <input type="text" class="subject" placeholder="Subject">
+                  <input type="time" class="time">
+              </div>
+              <div class="entry">
+                  <input type="text" class="subject" placeholder="Subject">
+                  <input type="time" class="time">
+              </div>
+          </div>
+          <div class="weekday">
+              <h2>Friday</h2>
+              <div class="entry">
+                  <input type="text" class="subject" placeholder="Subject">
+                  <input type="time" class="time">
+              </div>
+              <div class="entry">
+                  <input type="text" class="subject" placeholder="Subject">
+                  <input type="time" class="time">
+              </div>
+              <div class="entry">
+                  <input type="text" class="subject" placeholder="Subject">
+                  <input type="time" class="time">
+              </div>
+              <div class="entry">
+                  <input type="text" class="subject" placeholder="Subject">
+                  <input type="time" class="time">
+              </div>
+          </div>
+      </form>
+    </div>
+            </div>
+        </section>
+
+        <section>
+          <div class="tests"></div>
+          <div class="notes"></div>
+        </section>
+    </main>
+    <script src="calender.js"></script>
+    <script src="homework.js"></script>
+    <script src="script.js"></script>
+    <script src="schedule.js"></script>
+</body>
+</html>
