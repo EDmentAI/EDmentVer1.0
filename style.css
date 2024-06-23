@@ -765,3 +765,23 @@ button:hover {
     text-align: center;
     padding-bottom: 20px;
 }
+
+
+
+
+/*Papers and notes*/
+
+.personal{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-grow: 1;
+}
+.personal > a{
+    max-width: 600px;
+}
+
+.pastpapers, .notes{
+  width: 200px;
+}
+
