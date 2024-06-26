@@ -831,7 +831,7 @@ button:hover {
 
 @media screen and (max-width: 600px){
   aside{
-    display: none;
+    visibility: hidden;
     
   }
   main{
