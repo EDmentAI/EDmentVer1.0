@@ -688,7 +688,7 @@ button:hover {
   .container {
     min-height: 100vh;
     flex-direction: column;
-    border-radius: 0;
+    border-radius: 10px;
   }
   .container .left {
     width: 100%;
@@ -751,7 +751,7 @@ button:hover {
   background-color: #242424;
   border-radius: 10px;
   padding-inline: 20px;
-  padding-top: 10px;
+  /* padding-top: 10px; */
   
   
 }
@@ -836,7 +836,12 @@ button:hover {
   }
   main{
     margin: 0px;
+    padding: 0px;
+    /* margin-right: 20px; */
     
+  }
+  section{
+    margin-right: 20px;
   }
   .extra-classes{
     padding-inline: 20px;
@@ -845,6 +850,7 @@ button:hover {
   .extra-classes > h1{
     top: 0px;
   }
+  
   
    .mobile-nav{
     position: fixed;
