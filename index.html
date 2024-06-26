@@ -19,7 +19,7 @@
         <a href="#profile" class="profile"><img src="images/Graphic.png" alt=""><br><strong>Ellie's Worspace</strong></a><br><br>
         <!-- <input type="text" placeholder="Name"> -->
 
-        <a href="#Search"><img class="icon" src="images/icons/search.png" alt="">Search</a>
+        
 
         <a href="#Home"><img class="icon" src="images/icons/home.png" alt="">Home</a>
 
@@ -29,8 +29,8 @@
 
         <a href="#settings"><img class="icon" src="images/icons/Settings.png" alt="">Settings</a>
 
-        <div class="homework">
-          <h1>Homework</h1>
+        <div id="homework" class="homework">
+          <h1><img class="icon" src="images/icons/Homework.png" alt="">Homework:</h1>
           <form id="noteForm">
             <div class="note">
                 <input type="text" class="note-text" placeholder="Subject 1">
@@ -155,10 +155,11 @@
               <i class="fas fa-plus"></i>
             </button>
           </div>
-      
+
             <div class="extra-classes">
+              <h1>Extra classes:</h1>
               <div class="classes">
-        <h1>Extra classes:</h1>
+        
         <form id="scheduleForm">
           <div class="weekday">
               <h2>Monday</h2>
@@ -257,19 +258,35 @@
           </div>
       </form>
     </div>
-            </div>\
+            </div>
             
         </section>
 
-        <section class="personal">
+        <!-- <section class="personal">
           <a href=""><img class="pastpapers" src="images/pastpapers.png" alt=""></a>
           <a href=""><img class="notes" src="images/notes.png" alt=""></a>
           
-        </section>
+        </section> -->
+
+
+
+
+
+
+            <!-- mobile apps -->
+        <div class="mobile-nav"> 
+          <a id="homework-icon" href=""><img class="mobile-icon" src="images/icons/Homework.png" alt=""></a>
+          <a id="home-icon" href=""><img class="mobile-icon home-icon" src="images/icons/home.png" alt=""></a>
+          
+          <a id="profile-icon" href=""><img class="mobile-icon profile-icon" src="images/graphic.png" alt=""></a>
+          
+      </div>
     </main>
+    
     <script src="calender.js"></script>
     <script src="homework.js"></script>
     <script src="script.js"></script>
     <script src="schedule.js"></script>
+    <script src="mobile.js"></script>
 </body>
 </html>

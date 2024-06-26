@@ -36,6 +36,9 @@ body{
  
   
 }
+.mobile-nav{
+  visibility: hidden;
+}
 
 /* right side */
 
@@ -76,6 +79,8 @@ h1,h2{
   max-width: 20px;
   height: 20px;
   margin: 20px 18px 0px 0px;
+  position: relative;
+  top: 3px;
 }
 
 
@@ -93,6 +98,9 @@ aside {
   font-size: 16px;
   
 }
+
+
+
 .profile {
   margin: auto;
   text-align: center;
@@ -173,6 +181,7 @@ main {
   margin-right: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  
 }
 
 .note-check {
@@ -194,6 +203,10 @@ button {
 
 button:hover {
   background-color: #0056b3;
+}
+.homework > h1{
+  font-size: 18px;
+  text-decoration: underline;
 }
 
 
@@ -706,6 +719,7 @@ button:hover {
   .add-event-wrapper {
     bottom: 100px;
   }
+  
 }
 @media screen and (max-width: 500px) {
   .calendar .month {
@@ -731,9 +745,15 @@ button:hover {
 
 .extra-classes{
   max-height: 445px;
-  max-width: 800px;
+  max-width: 356px;
   margin: 10px 0px 0px 20px;
   font-size: 16px;
+  background-color: #242424;
+  border-radius: 10px;
+  padding-inline: 20px;
+  padding-top: 10px;
+  
+  
 }
 .weekday {
     margin-bottom: 20px;
@@ -761,9 +781,33 @@ button:hover {
     border-radius: 4px;
 }
 
-.classes > h1{
+.extra-classes > h1{
     text-align: center;
-    padding-bottom: 20px;
+    background-color: #242424;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    border: 24px solid #242424;
+    
+
+}
+
+/* .tab{
+  position: fixed;
+  background-color: #090808;
+  max-width: 100%;
+  display: flex;
+  flex-grow: 1;
+  
+  padding: 10px;
+  
+  /* border-top: #090808; */
+
+/* } */ */
+
+
+.weekday{
+  margin-top: 50px;
 }
 
 
@@ -772,7 +816,7 @@ button:hover {
 /*Papers and notes*/
 
 .personal{
-  display: flex;
+  display: hidden;
   flex-wrap: wrap;
   justify-content: center;
   flex-grow: 1;
@@ -785,3 +829,47 @@ button:hover {
   width: 200px;
 }
 
+@media screen and (max-width: 600px){
+  aside{
+    display: none;
+    
+  }
+  main{
+    margin: 0px;
+    
+  }
+  .extra-classes{
+    padding-inline: 20px;
+    /* border: 0.5px solid var(--primary-clr); */
+  }
+  .extra-classes > h1{
+    top: 0px;
+  }
+  
+   .mobile-nav{
+    position: fixed;
+    bottom: -1px;
+    background-color: #242424;
+    height: 50px;
+    width: 100vw;
+    visibility: visible;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border-bottom: 10px solid #242424; */
+   }
+  
+
+  .mobile-icon{
+    width: 30px;
+    margin-inline: 30px;
+  }
+  .profile-icon{
+    width: 37px;
+    border: 2px solid var(--primary-clr);
+    border-radius: 50%;
+  }
+  
+  
+}
