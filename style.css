@@ -9,6 +9,7 @@
   /* border : 1px solid red */
   overflow-x: hidden;
   font-family: 'Inter',sans-serif;
+  
 }
 /* width */
 ::-webkit-scrollbar {
@@ -33,6 +34,7 @@
 body{
   background-color: #090808;
   font-family: 'Inter',sans-serif;
+  /* overflow-y: hidden; */
  
   
 }
@@ -96,6 +98,7 @@ aside {
   overflow-x: hidden;
   padding-top: 20px;
   font-size: 16px;
+  overflow-y: visible;
   
 }
 
@@ -124,6 +127,11 @@ aside a, .dropdown-btn {
 /* On mouse-over */
 aside a:hover, .dropdown-btn:hover {
   color: #f1f1f1;
+  background-color: #ffffff28;
+  border-radius: 10px;
+  
+  
+  /* padding-bottom: 60px; */
 }
 
 /* Main content */
@@ -131,6 +139,8 @@ main {
   margin-left: 200px; /* Same as the width of the aside */
   font-size: 20px; /* Increased text to enable scrolling */
   padding: 0px 10px;
+  overflow-y: hidden;
+  
 }
 
 /* Add an active class to the active dropdown button */
@@ -219,34 +229,28 @@ button:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+ 
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* calendar */
 .container {
   position: relative;
-  width: 700px;
+  width: 600px;
   color: #fff;
   display: flex;
   margin: 10px 0px 0px 20px;
   border-radius: 10px;
   background-color: #242424;
-  height: 30%;
+  height: 420px;
+  
+  
 }
 .left {
-  width: 70%;
+  width: 600px;
   padding: 0px;
+  overflow: hidden;
+  
 }
 .calendar {
   position: relative;
@@ -444,8 +448,9 @@ button:hover {
 }
 .container .right {
   position: relative;
-  width: 30%;
-  height: auto;
+  width: 60%;
+  height: 100%;
+  overflow-y: visible;
   
 }
 
@@ -574,7 +579,7 @@ button:hover {
 }
 .events .no-event {
   width: 100%;
-  height: 100%;
+  height: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -596,6 +601,7 @@ button:hover {
 }
 .add-event-wrapper.active {
   max-height: 300px;
+  background-color: #3f3f3f;
 }
 .add-event-header {
   width: 100%;
@@ -604,7 +610,7 @@ button:hover {
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
-  color: #373c4f;
+  color: #ffffff;
   border-bottom: 1px solid #f5f5f5;
 }
 .add-event-header .close {
@@ -678,79 +684,26 @@ button:hover {
   color: var(--primary-clr);
 }
 
+h5{
+  text-align: center;
+}
+
 /* media queries */
 
-@media screen and (max-width: 1000px) {
-  body {
-    align-items: flex-start;
-    justify-content: flex-start;
-  }
-  .container {
-    min-height: 100vh;
-    flex-direction: column;
-    border-radius: 10px;
-  }
-  .container .left {
-    width: 100%;
-    height: 100%;
-    padding: 20px 0;
-  }
-  .container .right {
-    width: 100%;
-    height: 100%;
-    padding: 20px 0;
-  }
-  .calendar::before,
-  .calendar::after {
-    top: 100%;
-    left: 50%;
-    width: 97%;
-    height: 12px;
-    border-radius: 0 0 5px 5px;
-    transform: translateX(-50%);
-  }
-  .calendar::before {
-    width: 94%;
-    top: calc(100% + 12px);
-  }
-  .events {
-    padding-bottom: 340px;
-  }
-  .add-event-wrapper {
-    bottom: 100px;
-  }
-  
-}
-@media screen and (max-width: 500px) {
-  .calendar .month {
-    height: 75px;
-  }
-  .calendar .weekdays {
-    height: 50px;
-  }
-  .calendar .days .day {
-    height: 40px;
-    font-size: 0.8rem;
-  }
-  .calendar .days .day.active,
-  .calendar .days .day.today {
-    font-size: 1rem;
-  }
-  .right .today-date {
-    padding: 20px;
-  }
-}
+
 
 /*Classes*/
 
 .extra-classes{
-  max-height: 445px;
+  max-height: 700px;
   max-width: 356px;
   margin: 10px 0px 0px 20px;
   font-size: 16px;
   background-color: #242424;
   border-radius: 10px;
   padding-inline: 20px;
+  position: static;
+  overflow-y: visible;
   /* padding-top: 10px; */
   
   
@@ -816,19 +769,102 @@ button:hover {
 /*Papers and notes*/
 
 .personal{
-  display: hidden;
+  display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  flex-grow: 1;
+  justify-content: start;
+  margin-top: -40px;
+  max-width: 956px;
+  margin: auto;
+  margin-top: -365px;
 }
-.personal > a{
-    max-width: 600px;
+
+.pastpapers:hover{
+  border: 2px solid var(--primary-clr);
+  border-radius: 10px;
+
+}
+.notes:hover{
+  border: 2px solid var(--primary-clr);
+  border-radius: 10px;
+
 }
 
 .pastpapers, .notes{
-  width: 200px;
-}
+  width: 290px;
+  height: 270px;
+  margin-right: 10px;
+  
 
+}
+@media screen and (max-width: 1219px) {
+  body {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .container {
+    min-height: 100vh;
+    flex-direction: column;
+    border-radius: 10px;
+  }
+  .container .left {
+    width: 100%;
+    height: 600px;
+    padding: 20px 0;
+  }
+  .container .right {
+    width: 100%;
+    height: 500px;
+    padding: 0px 0px;
+    overflow-y: hidden;
+  }
+  .calendar::before,
+  .calendar::after {
+    top: 100%;
+    left: 50%;
+    width: 97%;
+    height: 12px;
+    border-radius: 0 0 5px 5px;
+    transform: translateX(-50%);
+  }
+  .calendar::before {
+    width: 94%;
+    top: calc(100% + 12px);
+  }
+  .events {
+    padding-bottom: 340px;
+  }
+  .add-event-wrapper {
+    bottom: 100px;
+  }
+  
+  .personal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+   
+  }
+
+  .personal > div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+  
+.extra-classes{
+  max-height: 500px;
+  width: 100%;
+  font-size: 16px;
+  background-color: #242424;
+  border-radius: 10px;
+  
+  
+  /* padding-top: 10px; */
+  
+  
+}
+}
 @media screen and (max-width: 600px){
   aside{
     visibility: hidden;
@@ -849,9 +885,18 @@ button:hover {
   }
   .extra-classes > h1{
     top: 0px;
+    
+    
   }
+  .personal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 60px;
+   
   
-  
+  }
    .mobile-nav{
     position: fixed;
     bottom: -1px;
@@ -879,3 +924,27 @@ button:hover {
   
   
 }
+
+
+
+@media screen and (max-width: 500px) {
+  .calendar .month {
+    height: 75px;
+  }
+  .calendar .weekdays {
+    height: 50px;
+  }
+  .calendar .days .day {
+    height: 40px;
+    font-size: 0.8rem;
+  }
+  .calendar .days .day.active,
+  .calendar .days .day.today {
+    font-size: 1rem;
+  }
+  .right .today-date {
+    padding: 20px;
+  }
+
+}
+

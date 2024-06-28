@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="notes.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+
+</head>
+<body>
+    <aside>
+        <a href="settings.html" class="profile"><img src="images/Graphic.png" alt=""><br><strong>Ellie's Workspace</strong></a><br><br>
+        <!-- <input type="text" placeholder="Name"> -->
+
+        
+
+        <a href="index.html"><img class="icon" src="images/icons/home.png" alt="">Home</a>
+
+        <a href="notes.html"><img class="icon" src="images/icons/notes.png" alt="">Subjects and notes</a>
+
+        <a href="pastpapers.html"><img class="icon" src="images/icons/papers.png" alt="">Past Papers</a>
+
+        <a href="settings.html"><img class="icon" src="images/icons/Settings.png" alt="">Settings</a>
+
+        <div id="homework" class="homework">
+          <h1><img class="icon" src="images/icons/Homework.png" alt="">Homework:</h1>
+          <form id="noteForm">
+            <div class="note">
+                <input type="text" class="note-text" placeholder="Subject 1">
+                <input type="checkbox" class="note-check">
+            </div>
+            <div class="note">
+                <input type="text" class="note-text" placeholder="Subject 2">
+                <input type="checkbox" class="note-check">
+            </div>
+            <div class="note">
+                <input type="text" class="note-text" placeholder="Subject 3">
+                <input type="checkbox" class="note-check">
+            </div>
+            <div class="note">
+                <input type="text" class="note-text" placeholder="Subject 4">
+                <input type="checkbox" class="note-check">
+            </div>
+            <div class="note">
+                <input type="text" class="note-text" placeholder="Subject 5">
+                <input type="checkbox" class="note-check">
+            </div>
+            <div class="note">
+                <input type="text" class="note-text" placeholder="Subject 6">
+                <input type="checkbox" class="note-check">
+            </div>
+            <div class="note">
+                <input type="text" class="note-text" placeholder="Subject 7">
+                <input type="checkbox" class="note-check">
+            </div>
+            <div class="note">
+                <input type="text" class="note-text" placeholder="Subject 8">
+                <input type="checkbox" class="note-check">
+            </div>
+            <button type="button" onclick="clearNotes()">Clear Homework</button>
+        </form>
+      </div>
+        <!-- <button class="dropdown-btn">Dropdown 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div> -->
+        
+      </aside>
+      
+      <main>
+        <header><img src="images/Logo.png" alt="">
+            
+            <div class="habit-tracker"></div>
+        </header>
+    </main>
+    <script src="homework.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

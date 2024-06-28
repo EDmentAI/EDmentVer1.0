@@ -261,7 +261,7 @@ function updateEvents(date) {
   });
   if (events === "") {
     events = `<div class="no-event">
-            <h3>No Events</h3>
+            <h5>No upcoming tests/assignments</h5>
         </div>`;
   }
   eventsContainer.innerHTML = events;
@@ -288,24 +288,24 @@ addEventTitle.addEventListener("input", (e) => {
   addEventTitle.value = addEventTitle.value.slice(0, 60);
 });
 
-function defineProperty() {
-  var osccred = document.createElement("div");
+// function defineProperty() {
+//   var osccred = document.createElement("div");
  
-  osccred.style.position = "absolute";
-  osccred.style.bottom = "0";
-  osccred.style.right = "0";
-  osccred.style.fontSize = "10px";
-  osccred.style.color = "#ccc";
-  osccred.style.fontFamily = "sans-serif";
-  osccred.style.padding = "5px";
-  osccred.style.background = "#fff";
-  osccred.style.borderTopLeftRadius = "5px";
-  osccred.style.borderBottomRightRadius = "5px";
-  osccred.style.boxShadow = "0 0 5px #ccc";
-  document.body.appendChild(osccred);
-}
+//   osccred.style.position = "absolute";
+//   osccred.style.bottom = "0";
+//   osccred.style.right = "0";
+//   osccred.style.fontSize = "10px";
+//   osccred.style.color = "#ccc";
+//   osccred.style.fontFamily = "sans-serif";
+//   osccred.style.padding = "5px";
+//   osccred.style.background = "#fff";
+//   osccred.style.borderTopLeftRadius = "5px";
+//   osccred.style.borderBottomRightRadius = "5px";
+//   osccred.style.boxShadow = "0 0 5px #ccc";
+//   document.body.appendChild(osccred);
+// }
 
-defineProperty();
+// defineProperty();
 
 //allow only time in eventtime from and to
 
@@ -363,10 +363,10 @@ addEventSubmit.addEventListener("click", () => {
       });
     }
   });
-  if (eventExist) {
-    alert("Event already added");
-    return;
-  }
+  // if (eventExist) {
+  //   alert("Event already added");
+  //   return;
+  // }
 
   const newEvent = {
     title: eventTitle,
