@@ -1,0 +1,109 @@
+:root {
+    --primary-clr: #1E7DF1;
+  }
+#notesContainer_aizv {
+    max-width: 90%;
+    margin: auto;
+    
+}
+
+.note_wzti {
+    background: #3f3f3f;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.subject_vzyw {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    padding: 8px;
+    font-size: 18px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #fafafa;
+}
+
+.details_yrvb {
+    height: 100px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    border: 1px solid #ddd;
+    padding: 10px;
+    outline: none;
+    font-size: 16px;
+    background: #fefefe;
+    border-radius: 4px;
+}
+
+.toolbar_zssf {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    flex-wrap: wrap;
+}
+
+.boldBtn_cfor, .italicBtn_vsbj, .linkBtn_ngez, .bulletedBtn_dlrv, .underlineBtn_lcyu {
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid white;
+    background: none;
+    outline: none;
+    padding: 5px 10px;
+    transition: background 0.3s;
+    max-width: 80px;
+    margin-inline: 20px;
+    /* margin-block: 10px; */
+}
+
+.boldBtn_cfor:hover, .italicBtn_vsbj:hover, .linkBtn_ngez:hover, .bulletedBtn_dlrv:hover, .underlineBtn_lcyu:hover {
+    background: var(--primary-clr);
+    border-radius: 4px;
+    
+}
+
+input[type="color"] {
+    cursor: pointer;
+}
+
+#addNoteBtn_rkrl {
+    display: block;
+    margin: 20px auto;
+    font-size: 24px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background: #333;
+    color: #fff;
+    width: 90%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s;
+}
+
+#addNoteBtn_rkrl:hover {
+    background: var(--primary-clr);
+}
+
+.deleteBtn_hwnh {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ff6666;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 80px;
+}
+
+.deleteBtn_hwnh:hover {
+    background: #ff3333;
+}
