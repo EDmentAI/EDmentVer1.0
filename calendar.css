@@ -1,332 +1,30 @@
-:root {
-  --primary-clr: #1E7DF1;
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-  /* border : 1px solid red */
-  overflow-x: hidden;
-  font-family: 'Inter',sans-serif;
-  
-}
-/* width */
-::-webkit-scrollbar {
-  width: 7px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #00000000;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #313131;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-
-body{
-  background-color: #090808;
-  font-family: 'Inter',sans-serif;
-  /* overflow-y: hidden; */
- 
-  
-}
-.mobile-nav{
-  visibility: hidden;
-}
-
-/* right side */
-
-header{
-  background-image: url(images/banner.png);
-  height: 220px;
-  background-repeat: no-repeat;
-  width: 100%;
-  color: white;
-  background-size: 100% 100%;
-  display: flex;
-}
-header > img{
-  max-width: 260px;
-  margin: auto ;
-}
-
-h1,h2{
-  color: white;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* side bar */
-
-.icon{
-  max-width: 20px;
-  height: 20px;
-  margin: 20px 18px 0px 0px;
-  position: relative;
-  top: 3px;
-}
-
-
-/* Fixed aside, full height */
-
-
-
-aside {
-  height: 100%;
-  width: 220px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  padding-top: 20px;
-  font-size: 16px;
-  overflow-y: visible;
-  
-}
-
-
-
-.profile-card {
-  background-color: rgba(255, 255, 255, 0);
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  padding: 20px;
-  text-align: center;
-  width: 100%;
-  color: white;
-}
-
-.profile-image {
-  position: relative;
-}
-
-.image-wrapper {
-  position: relative;
-  width: 100px;
-  height: 100px;
-  overflow: hidden;
-  border-radius: 50%;
-  margin: 0 auto;
-}
-
-.profile-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.image-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  cursor: pointer;
-}
-
-.image-wrapper:hover .image-overlay {
-  opacity: 1;
-}
-
-.overlay-text {
-  color: white;
-  font-size: 14px;
-  cursor: pointer;
-}
-
-.profile-info {
-  margin-top: 20px;
-}
-
-#profile-name {
-  border: none;
-  outline: none;
-  font-size: 18px;
-  font-weight: bold;
-  margin-top: 10px;
-}
-
-/* Style the aside links and the dropdown button */
-aside a, .dropdown-btn {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  /* font-size: 20px; */
-  color: #818181;
-  display: block;
-  border: none;
-  background: none;
-  width: 100%;
-  text-align: left;
-  cursor: pointer;
-  outline: none;
-}
-
-/* On mouse-over */
-aside a:hover, .dropdown-btn:hover {
-  color: #f1f1f1;
-  background-color: #ffffff28;
-  border-radius: 10px;
-  
-  
-  /* padding-bottom: 60px; */
-}
-
-/* Main content */
-main {
-  margin-left: 200px; /* Same as the width of the aside */
-  font-size: 20px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
-  
-  
-}
-
-/* Add an active class to the active dropdown button */
-.active {
-  background-color: rgba(0, 128, 0, 0);
-  color: white;
-}
-
-/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
-.dropdown-container {
-  display: none;
-  background-color: #262626;
-  padding-left: 8px;
-}
-
-/* Optional: Style the caret down icon */
-.fa-caret-down {
-  float: right;
-  padding-right: 8px;
-}
-
-/* Some media queries for responsiveness */
-@media screen and (max-height: 450px) {
-  aside {padding-top: 15px;}
-  aside a {font-size: 18px;}
-}
-
-
-
-/* Homework */
-
-.homework{
-  max-width: 200px;
-  margin-top: 20px;
-  margin-left: 7px;
-  padding: 10px;
-}
-.note {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-  margin-top: 15px;
-}
-
-.note-text {
-  flex-grow: 1;
-  padding: 10px;
-  margin-right: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  
-}
-
-.note-check {
-  width: 20px;
-  height: 20px;
-}
-
-button {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  border: none;
-  background-color: var(--primary-clr);
-  color: #fff;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-button:hover {
-  background-color: #0056b3;
-}
-.homework > h1{
-  font-size: 18px;
-  text-decoration: underline;
-}
-
-
-
-
-
-
-
-.plan{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
- 
-}
-
-
 /* calendar */
 .container {
   position: relative;
-  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+  padding: 5px;
   color: #fff;
   display: flex;
-  margin: 10px 0px 0px 20px;
+  width: 80%;
   border-radius: 10px;
   background-color: #242424;
-  height: 420px;
-  
-  
 }
 .left {
-  width: 600px;
-  padding: 0px;
-  overflow: hidden;
-  
+  width: 60%;
+  padding: 20px;
 }
 .calendar {
   position: relative;
-  max-width: 100%;
-  
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  border: 3px solid rgba(0, 0, 0, 0);
-  color: #000000;
+  justify-content: space-between;
+  color: #878895;
   border-radius: 5px;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 /* set after behind the main element */
 .calendar::before,
@@ -748,118 +446,6 @@ button:hover {
   color: var(--primary-clr);
 }
 
-h5{
-  text-align: center;
-}
-
-/* media queries */
-
-
-
-/*Classes*/
-
-.extra-classes{
-  max-height: 700px;
-  max-width: 356px;
-  margin: 10px 0px 0px 20px;
-  font-size: 16px;
-  background-color: #242424;
-  border-radius: 10px;
-  padding-inline: 20px;
-  position: static;
-  overflow-y: visible;
-  /* padding-top: 10px; */
-  
-  
-}
-.weekday {
-    margin-bottom: 20px;
-}
-
-
-.entry {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.subject {
-    flex-grow: 1;
-    padding: 10px;
-    margin-right: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.time {
-    width: 150px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.extra-classes > h1{
-    text-align: center;
-    background-color: #242424;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0px;
-    border: 24px solid #242424;
-    
-
-}
-
-/* .tab{
-  position: fixed;
-  background-color: #090808;
-  max-width: 100%;
-  display: flex;
-  flex-grow: 1;
-  
-  padding: 10px;
-  
-  /* border-top: #090808; */
-
-/* } */ */
-
-
-.weekday{
-  margin-top: 50px;
-}
-
-
-
-
-/*Papers and notes*/
-
-.personal{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: start;
-  margin-top: -40px;
-  max-width: 956px;
-  margin: auto;
-  margin-top: -365px;
-}
-
-.pastpapers:hover{
-  border: 2px solid var(--primary-clr);
-  border-radius: 10px;
-
-}
-.notes:hover{
-  border: 2px solid var(--primary-clr);
-  border-radius: 10px;
-
-}
-
-.pastpapers, .notes{
-  width: 290px;
-  height: 270px;
-  margin-right: 10px;
-  
-
-}
 @media screen and (max-width: 1219px) {
   body {
     align-items: flex-start;
@@ -930,39 +516,22 @@ h5{
 }
 }
 @media screen and (max-width: 600px){
-  
-  header{
-    height: 100px;
-   
-  }
   aside{
-    display: none;
+    visibility: hidden;
+    
   }
-
-  header > img{
-    max-width: 100%;
-    margin: auto ;
-    height: 60px;
-  }
-  
-  
   main{
     margin: 0px;
     padding: 0px;
     /* margin-right: 20px; */
     
   }
-  .container{
-    height: 20px;
-  }
-  .right
   section{
     margin-right: 20px;
   }
   .extra-classes{
     padding-inline: 20px;
     /* border: 0.5px solid var(--primary-clr); */
-    /* display: none; */
   }
   .extra-classes > h1{
     top: 0px;
@@ -1003,7 +572,6 @@ h5{
     border-radius: 50%;
   }
   
-
   
 }
 
@@ -1029,4 +597,3 @@ h5{
   }
 
 }
-

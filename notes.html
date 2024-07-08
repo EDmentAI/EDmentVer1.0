@@ -18,18 +18,32 @@
 </head>
 <body>
     <aside>
-        <a href="settings.html" class="profile"><img src="images/Graphic.png" alt=""><br><strong>Ellie's Workspace</strong></a><br><br>
+        <div class="profile-card">
+            <div class="profile-image">
+              <div class="image-wrapper">
+                <img id="profile-pic" src="default.jpg" alt="Profile Picture">
+                <div class="image-overlay">
+                  <label for="upload-image" class="overlay-text">Change Profile Photo</label>
+                  <input type="file" id="upload-image" accept="image/*">
+                </div>
+              </div>
+            </div>
+            <div class="profile-info">
+              <h2 id="profile-name" contenteditable="true" placeholder="Enter your name">Name and surname</h2>
+            </div>
+          </div><br>
         <!-- <input type="text" placeholder="Name"> -->
 
         
 
         <a href="index.html"><img class="icon" src="images/icons/home.png" alt="">Home</a>
+        <a href="calendar.html"><img class="icon" src="images/icons/calender.png" alt="">Calender</a>
 
-        <a href="notes.html"><img class="icon" src="images/icons/notes.png" alt="">Subjects and notes</a>
+        <a href="notes.html"><img class="icon" src="images/icons/notes.png" alt="">Quick note</a>
 
         <a href="pastpapers.html"><img class="icon" src="images/icons/papers.png" alt="">Past Papers</a>
 
-        <a href="settings.html"><img class="icon" src="images/icons/Settings.png" alt="">Settings</a>
+        
 
         <div id="homework" class="homework">
           <h1><img class="icon" src="images/icons/Homework.png" alt="">Homework:</h1>
@@ -79,7 +93,7 @@
 
     
     <div id="notesContainer_aizv"></div>
-    <button id="addNoteBtn_rkrl">+</button>
+    <button id="addNoteBtn_rkrl"> + </button>
 
     </main>
     <script src="homework.js"></script>
